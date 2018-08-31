@@ -7,6 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -19,9 +22,21 @@ public class PlacesOfInterestFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_places_of_interest, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.attraction_list, container, false);
+
+        // create a list of tourist attractions
+        final ArrayList<LocationInformation> attractions = new ArrayList<LocationInformation>();
+
+        // create a new location information object that populates list
+        attractions.add(new LocationInformation("stuff"));
+
+        LocationInformationAdapter adapter = new LocationInformationAdapter(getActivity(), attractions);
+
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
+
+        listView.setAdapter(adapter);
+
+        return rootView;
     }
 }

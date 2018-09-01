@@ -29,7 +29,9 @@ public class MuseumsFragment extends Fragment {
         final ArrayList<LocationInformation> attractions = new ArrayList<LocationInformation>();
 
         // create a new location information object that populates list
-        attractions.add(new LocationInformation("stuff"));
+        attractions.add(new LocationInformation(R.string.museums_cma));
+        attractions.add(new LocationInformation(R.string.museums_naturalhistory));
+        attractions.add(new LocationInformation(R.string.museums_moca));
 
         LocationInformationAdapter adapter = new LocationInformationAdapter(getActivity(), attractions);
 

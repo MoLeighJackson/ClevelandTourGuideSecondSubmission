@@ -32,4 +32,17 @@ public class AttractionFragmentPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return 4;
     }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        if (position == 0) {
+            return mContext.getString(R.string.hotels_frag_title);
+        } else if (position == 1) {
+            return mContext.getString(R.string.museums_frag_title);
+        } else if (position == 2) {
+            return mContext.getString(R.string.placesofinterest_frag_title);
+        } else {
+            return mContext.getString(R.string.restaurants_frag_title);
+        }
+    }
 }

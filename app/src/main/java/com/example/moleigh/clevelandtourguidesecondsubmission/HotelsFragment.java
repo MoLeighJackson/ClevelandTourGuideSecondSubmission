@@ -31,7 +31,9 @@ public class HotelsFragment extends Fragment {
         final ArrayList<LocationInformation> attractions = new ArrayList<LocationInformation>();
 
         // create a new location information object that populates list
-        attractions.add(new LocationInformation("stuff"));
+        attractions.add(new LocationInformation(R.string.hotels_hilton));
+        attractions.add(new LocationInformation(R.string.hotels_wyndham));
+        attractions.add(new LocationInformation(R.string.hotels_radisson));
 
         LocationInformationAdapter adapter = new LocationInformationAdapter(getActivity(), attractions);
 

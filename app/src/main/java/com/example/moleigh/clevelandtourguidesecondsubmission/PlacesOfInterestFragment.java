@@ -29,7 +29,10 @@ public class PlacesOfInterestFragment extends Fragment {
         final ArrayList<LocationInformation> attractions = new ArrayList<LocationInformation>();
 
         // create a new location information object that populates list
-        attractions.add(new LocationInformation("stuff", R.drawable.lincolnpark));
+        attractions.add(new LocationInformation(R.string.location_edgewater, R.drawable.edgewaterparkbeach));
+        attractions.add(new LocationInformation(R.string.location_lincolnpark, R.drawable.lincolnpark));
+        attractions.add(new LocationInformation(R.string.location_publicsquare, R.drawable.publicsquare));
+        attractions.add(new LocationInformation(R.string.location_steelyardcommons, R.drawable.steelyardcommons));
 
         LocationInformationAdapter adapter = new LocationInformationAdapter(getActivity(), attractions);
 

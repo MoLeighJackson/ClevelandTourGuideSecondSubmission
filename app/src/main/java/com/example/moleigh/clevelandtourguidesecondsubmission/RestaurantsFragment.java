@@ -29,7 +29,9 @@ public class RestaurantsFragment extends Fragment {
         final ArrayList<LocationInformation> attractions = new ArrayList<LocationInformation>();
 
         // create a new location information object that populates list
-        attractions.add(new LocationInformation("stuff"));
+        attractions.add(new LocationInformation(R.string.restaurants_trio));
+        attractions.add(new LocationInformation(R.string.restaurants_eljalapenos));
+        attractions.add(new LocationInformation(R.string.restaurants_mizu));
 
         LocationInformationAdapter adapter = new LocationInformationAdapter(getActivity(), attractions);
 

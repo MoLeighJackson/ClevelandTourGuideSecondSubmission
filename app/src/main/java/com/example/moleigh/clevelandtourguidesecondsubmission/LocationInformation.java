@@ -2,22 +2,23 @@ package com.example.moleigh.clevelandtourguidesecondsubmission;
 
 public class LocationInformation {
     /** information about tourist attractions */
-    private String mTouristAttraction;
+    private int mTouristAttraction;
     /** image resource */
     private int mImageResID = NO_IMAGE_PROVIDED;
     /** constant value that represents no image provided for layout */
     private static final int NO_IMAGE_PROVIDED = -1;
 
     /** create a new LocationInformation object.*/
-    public LocationInformation(String touristAttraction) {
+    public LocationInformation(int touristAttraction) {
         mTouristAttraction = touristAttraction;
     }
 
-    public LocationInformation(String touristAttraction, int imageResID) {
+    public LocationInformation(int touristAttraction, int imageResID) {
+        mTouristAttraction = touristAttraction;
         mImageResID = imageResID;
     }
     /** Get and return information about tourist attraction*/
-    public String getTouristAttraction() {
+    public int getTouristAttraction() {
         return mTouristAttraction;
     }
     /** Get and return image */

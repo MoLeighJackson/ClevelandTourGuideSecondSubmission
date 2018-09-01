@@ -1,6 +1,28 @@
 <resources>
+    <!-- application name -->
     <string name="app_name">Cleveland Tour Guide App</string>
+    <!-- fragment titles -->
+    <string name="hotels_frag_title">Hotels</string>
+    <string name="museums_frag_title">Museums</string>
+    <string name="placesofinterest_frag_title">Places of Interest</string>
+    <string name="restaurants_frag_title">Restaurants</string>
+    <!-- list of attractions -->
+    <!-- hotels -->
+    <string name="hotels_hilton">Hilton Garden Inn</string>
+    <string name="hotels_wyndham">Wyndham</string>
+    <string name="hotels_radisson">Radisson Hotel</string>
+    <!-- museums -->
+    <string name="museums_cma">Cleveland Museum of Art</string>
+    <string name="museums_naturalhistory">Cleveland Museum of Natural History</string>
+    <string name="museums_moca">Museum of Contemporary Art Cleveland</string>
+    <!-- places of interest -->
+    <string name="location_edgewater">Edgewater Beach - Image from Google Maps</string>
+    <string name="location_lincolnpark">Lincoln Park - Image from Google Maps</string>
+    <string name="location_publicsquare">Public Square - Image from Google Maps</string>
+    <string name="location_steelyardcommons">Steelyard Commons - Image from Google Maps</string>
+    <!-- restaurants -->
+    <string name="restaurants_trio">Trio - Tremont</string>
+    <string name="restaurants_eljalapenos">El Jalapenos - Lakewood</string>
+    <string name="restaurants_mizu">Mizu Sushi - Parma</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
